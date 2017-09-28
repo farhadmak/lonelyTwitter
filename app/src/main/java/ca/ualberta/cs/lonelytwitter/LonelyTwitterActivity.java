@@ -23,6 +23,14 @@ import android.widget.ListView;
 		;import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+
+/**
+ * Lonley Twitter activity
+ *
+ * @author Team Farhad
+ * @version 1.0
+ *
+ */
 public class LonelyTwitterActivity extends Activity {
 
 	private static final String FILENAME = "file.sav";
@@ -32,7 +40,12 @@ public class LonelyTwitterActivity extends Activity {
 	private ArrayList<Tweet> tweets = new ArrayList<Tweet>();
 	private ArrayAdapter<Tweet> adapter;
 	
-	/** Called when the activity is first created. */
+
+	/**
+	 * Called when the activity is first created
+	 *
+	 * @param savedInstanceState
+	 */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -83,6 +96,10 @@ public class LonelyTwitterActivity extends Activity {
 	}
 
 	@Override
+	/**
+	 * Method that is called when activity starts
+	 *
+	 */
 	protected void onStart() {
 		// TODO Auto-generated method stub
 		super.onStart();
@@ -92,6 +109,12 @@ public class LonelyTwitterActivity extends Activity {
 		oldTweetsList.setAdapter(adapter);
 	}
 
+	/**
+	 * Method that loads data from file
+	 *
+	 * @see FileNotFoundException
+	 * @see IOException
+	 */
 	private void loadFromFile() {
 		try {
 			FileInputStream fis = openFileInput(FILENAME);
@@ -108,7 +131,13 @@ public class LonelyTwitterActivity extends Activity {
 			throw new RuntimeException(e);
 		}
 	}
-	
+
+	/**
+	 * Method that saves data to file when activity stops
+	 *
+	 * @see FileNotFoundException
+	 * @see IOException
+	 */
 	private void saveInFile() {
 		try {
 			FileOutputStream fos = openFileOutput(FILENAME,

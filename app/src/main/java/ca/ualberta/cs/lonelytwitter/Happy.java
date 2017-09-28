@@ -3,7 +3,11 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 /**
- * Created by farhadmakiabady on 2017-09-13.
+ * Happy Mood
+ *
+ * @author Team Farhad
+ * @version 1.0
+ * @see Mood
  */
 
 public class Happy extends Mood {

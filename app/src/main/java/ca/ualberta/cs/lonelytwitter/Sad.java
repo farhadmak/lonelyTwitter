@@ -3,8 +3,13 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 
 /**
- * Created by farhadmakiabady on 2017-09-14.
+ * Sad Mood
+ *
+ * @author Team Farhad
+ * @version 1.0
+ * @see Mood
  */
+
 
 public class Sad extends Mood {
     public Sad(Date date){

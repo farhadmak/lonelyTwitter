@@ -3,8 +3,13 @@ package ca.ualberta.cs.lonelytwitter;
 import java.util.Date;
 import java.util.List;
 
+
 /**
- * Created by farhadmakiabady on 2017-09-13.
+ * This is the Tweet interface
+ *
+ * @author Team Farhad
+ * @version 1.0
+ *
  */
 
 public interface Tweetable {

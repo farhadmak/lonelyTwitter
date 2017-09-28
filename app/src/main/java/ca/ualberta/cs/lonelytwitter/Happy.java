@@ -11,6 +11,10 @@ import java.util.Date;
  */
 
 public class Happy extends Mood {
+    /**
+     * Happy method with date functionality
+     * @param date date
+     */
     public Happy(Date date){
         super(date);
     }
